@@ -13,13 +13,11 @@ set (CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set (CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 # Include cloned engine directory in a build.
-# add_subdirectory(Urho3D)
-include (${URHO3D_SDK}/share/CMake/Modules/UrhoCommon.cmake)
-include(${URHO3D_SDK}/share/CMake/Urho3D.cmake)
+add_subdirectory(rbfx)
 
 file(GLOB_RECURSE MY_CPP_FILES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/Source/*.cpp)
 file(GLOB_RECURSE MY_H_FILES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/Source/*.h)
 
 set(MY_SOURCE_FILES ${MY_CPP_FILES} ${MY_H_FILES})
 add_executable(TEdit WIN32 ${MY_SOURCE_FILES})
-target_link_libraries(TEdit PRIVATE Urho3D)
+target_link_libraries(TEdit Urho3D)

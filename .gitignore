@@ -4,6 +4,7 @@ bin/*.png
 bin/TEdit
 bin/TEdit.exe
 bin/tolua++.exe
+out/*
 *.exe
 *.log
 *.ps3
@@ -11,3 +12,4 @@ bin/tolua++.exe
 *.ps4
 *.vs4
 *.dll
+/.vs
