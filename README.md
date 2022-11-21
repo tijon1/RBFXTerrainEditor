@@ -1,4 +1,7 @@
-# U3DTerrainEditor #
+# RBFXTerrainEditor #
+RBFX port of a terrain editor built using Urho3D.
+
+# ORIGINAL DESCRIPTION BELOW #
 Simple terrain editor built using Urho3D.
 Note that this is very much a work in progress. Features come and go without warning or notice. At any given time, things could be just horribly, *horribly* broken. 
 
