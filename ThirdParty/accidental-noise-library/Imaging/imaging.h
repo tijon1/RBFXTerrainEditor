@@ -4,7 +4,9 @@
 #define USETHREAD 1
 
 #include "../templates/tarrays.h"
+
 #include "../VM/vm.h"
+#include "../VM/kernel.h"
 
 namespace anl
 {

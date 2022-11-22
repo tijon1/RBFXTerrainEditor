@@ -22,10 +22,10 @@ extern "C"{
 #define ANL_IMPLEMENTATION
 #define IMPLEMENT_STB
 
+#include "../Imaging/stb_image.h"
 // If you want to use long-period hashing, uncomment the following line:
 //#define ANL_LONG_PERIOD_HASHING
 
-#include "../anl.h"
 
 
 static lua_State *globalL = NULL;

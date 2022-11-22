@@ -7,8 +7,20 @@
 #include <thread>
 #include <chrono>
 
+
+#include "../templates/tarrays.h"
+
+#include "../VM/vm.h"
+#include "../VM/kernel.h"
+
+#define STB_IMAGE_IMPLEMENTATION
+
 #include "stb_image.h"
+
+#define STB_IMAGE_WRITE_IMPLEMENTATION
+
 #include "stb_image_write.h"
+#include "imaging.h"
 
 namespace anl
 {
